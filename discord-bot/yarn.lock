@@ -975,6 +975,11 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+tatsu@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/tatsu/-/tatsu-0.2.4.tgz#04d3fe0c3fb7d3ffbc636d81c3e00b65517f787c"
+  integrity sha512-c/rv9sQakx9KLhO6hIdHzTwqPhp53Hf8xVhQdD+mpaINzrG6KjOCS71P1DI3Ku/LGKlj3zT/gmO4m8vPyjuoJQ==
+
 term-size@^2.1.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/term-size/-/term-size-2.2.1.tgz#2a6a54840432c2fb6320fea0f415531e90189f54"
