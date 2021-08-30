@@ -10,18 +10,16 @@ const getRoom = async () => {
 };
 
 const GameDisplay = (props: Props) => {
-  const { data, isLoading } = useQuery('getRoom', () => getRoom(), {
+  const { data, isLoading, error } = useQuery('getRoom', () => getRoom(), {
     retry: false,
     refetchOnWindowFocus: false,
   });
-  if (isLoading) {
+  if (isLoading || error) {
     return null;
   }
-  console.log(data);
   return (
     <div>
       <img src={URL.createObjectURL(data)} alt="room" />
-      {/* {data} */}
     </div>
   );
 };

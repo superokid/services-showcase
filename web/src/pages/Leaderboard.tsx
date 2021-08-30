@@ -33,7 +33,7 @@ const LeaderboardPage = (props: Props) => {
   }, [page, queryClient]);
 
   return (
-    <div>
+    <div className="leaderboard">
       <button onClick={() => setPage((old) => Math.max(old - 1, 0))} disabled={page === 0}>
         Previous Page
       </button>
@@ -59,7 +59,6 @@ const LeaderboardPage = (props: Props) => {
               </div>
             );
           })}
-          {JSON.stringify(data)}
         </div>
       )}
     </div>
