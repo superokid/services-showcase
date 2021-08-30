@@ -25,6 +25,11 @@ CREATE TABLE "user" (
   username varchar not null
 );
 
+CREATE INDEX idx_trade_buyer_user_id 
+ON trade(buyer_user_id);
+CREATE INDEX idx_trade_seller_user_id 
+ON trade(seller_user_id);
+
 INSERT INTO "user" (id, username) VALUES (123456789, 'user1');
 INSERT INTO "user" (id, username) VALUES (987654321, 'user2');
 
