@@ -1,0 +1,11 @@
+.leaderboard__list {
+  text-align: left;
+  width: 50%;
+  margin: 1em 25%;
+}
+.leaderboard__list__item {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  padding: 1em;
+}
